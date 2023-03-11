@@ -14,6 +14,6 @@ email.set_content(html.substitute({'name': 'Harry'}),'html')
 with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     smtp.ehlo()
     smtp.starttls() #encryption mechanism, to connect securely to the server.
-    smtp.login('data11scientist@gmail.com', 'I_am_data_scientist@11')
+    smtp.login('data11scientist@gmail.com', 'password')
     smtp.send_message(email)
     print('Email sent, boss!')
